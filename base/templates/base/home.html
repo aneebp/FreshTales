@@ -1,0 +1,61 @@
+{% extends "base/main.html" %} {% load static %} {% block content %}
+<!-- Navbar -->
+<nav
+  class="navbar navbar-light fixed-top bg-white d-flex justify-content-between"
+>
+  <a href="#" class="navbar-brand">
+    <h2>FreshTales</h2>
+  </a>
+  <div class="d-flex align-items-center">
+    <input
+      type="text"
+      class="form-control search-bar me-3"
+      placeholder="Search Inspiring Journeys..."
+    />
+    <div class="profile-container">
+      <img src="{% static "images/profile.jpg" %}" alt="Profile Icon"
+      class="profile-icon rounded-circle" />
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="story-card">
+  <div class="card-left">
+    <img src="{% static "images/profile.jpg" %}" alt="User Profile"
+    class="profile-img rounded-circle" />
+
+    <!-- Vote Buttons -->
+    <div class="vote-buttons">
+      <button class="vote upvote"><i class="fas fa-thumbs-up"></i></button>
+      <button class="vote downvote">
+        <i class="fas fa-thumbs-down"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="card-right">
+    <!-- Story Preview (first 5 lines) -->
+    <p class="story-preview">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga optio sunt
+      impedit commodi dolorum eius ipsam doloribus voluptatem repellat natus
+      officiis fugiat numquam necessitatibus unde dicta reiciendis praesentium
+      cumque at provident, ullam ab cupiditate sed rerum delectus? Mollitia
+      repellat iusto doloribus quia placeat hic sunt blanditiis repudiandae,
+      praesentium adipisci ipsum esse at modi earum maiores quibusdam
+      perferendis fugiat unde provident enim labore eaque? Aut quae maxime
+      architecto, voluptates deserunt tenetur odio inventore dignissimos neque
+      voluptatum nihil nulla quidem quasi iure adipisci reiciendis ipsum
+      recusandae in! Repellat harum facere repellendus ullam nesciunt commodi
+      consectetur porro aliquid eveniet pariatur, laborum molestiae cumque...
+    </p>
+    <!-- <a href="#" class="read-more">Read More</a> -->
+  </div>
+</div>
+
+<!-- Floating Plus Icon -->
+<div class="plus-icon" onclick="alert('Create a new story!')">
+  <i class="fas fa-plus"></i>
+</div>
+
+{% endblock content %}

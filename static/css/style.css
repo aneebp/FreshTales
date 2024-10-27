@@ -1,0 +1,168 @@
+/* Navbar Styling */
+.navbar {
+  padding: 0.5rem 1rem;
+  /* border-bottom: 1px solid #e0e0e0; */
+  margin: 30px 50px;
+}
+.navbar .navbar-brand h2 {
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+/* Search Bar */
+.search-bar {
+  width: 300px; /* Wider width for visibility */
+  padding: 0.6rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 30px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.search-bar:focus {
+  border-color: #007bff; /* Highlight color on focus */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Increased shadow on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Hover Effect */
+/* .search-bar:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); 
+  border-color: #888;
+} */
+
+/* Profile Image */
+/* Profile Icon Container */
+.profile-container {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Circular container */
+  padding: 3px; /* Space around the icon for the border */
+  background: linear-gradient(135deg, #9cd8d6, #1ca600);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Profile Icon Styling */
+.profile-icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid white; /* White border for contrast */
+  object-fit: cover; /* Ensures the image fills the circle without distortion */
+}
+
+/* Main Content */
+/* General Card Styling */
+.story-card {
+  margin: 12rem 4rem;
+  display: flex;
+  align-items: flex-start;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Side (Profile & Vote Buttons) */
+.card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 16px;
+}
+
+/* Profile Image Styling */
+.profile-img {
+  width: 50px; /* Adjust as needed */
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  object-fit: cover;
+}
+
+/* Vote Buttons Styling */
+.vote-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vote {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #888888;
+  transition: color 0.3s;
+  margin: 4px 0;
+}
+
+.vote:hover {
+  color: #32cd32; 
+}
+
+.downvote:hover {
+  color: #ff4d4d; 
+}
+.card-right {
+  flex: 1;
+}
+
+.story-preview {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.5;
+  max-height: calc(1.5em * 5); /* Limit to 5 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Only show 5 lines */
+  -webkit-box-orient: vertical;
+}
+
+/* .read-more {
+  display: inline-block;
+  margin-top: 8px;
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;
+} */
+/* 
+.read-more:hover {
+  text-decoration: underline;
+} */
+
+/* Floating Plus Icon */
+.plus-icon {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.plus-icon:hover {
+  background-color: #0056b3;
+}
+
+/* Navbar Scroll Effect */
+.navbar.scrolled {
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
